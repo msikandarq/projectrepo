@@ -27,7 +27,7 @@ public class SampleTest {
 		assertEquals(sampleServiceImpl.calculateGST(items), 3000.0, 0.0);
 	}
 	
-	@Test
+	/*@Test
 	public void validateGSTFail() {
 		SampleServiceImpl sampleServiceImpl = new SampleServiceImpl();
 
@@ -41,7 +41,7 @@ public class SampleTest {
 		items.add(item);
 
 		assertEquals(sampleServiceImpl.calculateGST(items), 300.0, 0.0);
-	}
+	}*/
 	
 	@Test
 	public void validateTaxPricePass() {
