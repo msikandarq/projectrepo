@@ -17,12 +17,12 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.pitest</groupId>
 			<artifactId>pitest-parent</artifactId>
 			<version>1.2.2</version>
 			<type>pom</type>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<plugins>
@@ -58,17 +58,17 @@
 				<version>1.2.2</version> <configuration> <targetClasses> <param>com.newt.service.*</param> 
 				</targetClasses> <targetTests> <param>com.newt.test.*</param> </targetTests> 
 				</configuration> </plugin> -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.pitest</groupId>
 				<artifactId>pitest-maven</artifactId>
 				<version>1.1.9</version>
 				<configuration>
 					<targetTests>
-						<!-- exclude IntegrationTests and SystemTests -->
+						exclude IntegrationTests and SystemTests
 						<param>*Test</param>
 					</targetTests>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>
