@@ -24,7 +24,7 @@ public class SampleTest {
 
 		items.add(item);
 
-		assertEquals(sampleServiceImpl.calculateGST(items), 3000.0, 0.0);
+		assertEquals(sampleServiceImpl.calculatePriceWithGST(items), 33000, 0.0);
 	}
 	
 	/*@Test
@@ -55,7 +55,7 @@ public class SampleTest {
 
 		items.add(item);
 
-		assertEquals(sampleServiceImpl.calcualteTax(items), 44400.0, 0.0);
+		assertEquals(sampleServiceImpl.calcualtePriceWithTax(items), 44400.0, 0.0);
 	}
 
 }

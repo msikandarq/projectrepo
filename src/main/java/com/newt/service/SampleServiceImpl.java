@@ -10,7 +10,7 @@ public class SampleServiceImpl {
 
 	}
 
-	public double calculateGST(List<Item> items) {
+	public double calculatePriceWithGST(List<Item> items) {
 		double finalTotal = 0;
 		for (Item item : items) {
 			double itemTotal = item.getPrice() * item.getItemQty();
@@ -22,7 +22,7 @@ public class SampleServiceImpl {
 		return priceAfterGST;
 	}
 
-	public double calcualteTax(List<Item> items) {
+	public double calcualtePriceWithTax(List<Item> items) {
 		double finalTotal = 0;
 		double vatRate = 12.5;
 		double serviceTaxRate = 2.5;
