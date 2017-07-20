@@ -17,12 +17,18 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.pitest</groupId>
 			<artifactId>pitest-parent</artifactId>
 			<version>1.2.2</version>
 			<type>pom</type>
-		</dependency> -->
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -54,21 +60,19 @@
 					<warSourceDirectory>WebContent</warSourceDirectory>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <groupId>org.pitest</groupId> <artifactId>pitest-maven</artifactId> 
-				<version>1.2.2</version> <configuration> <targetClasses> <param>com.newt.service.*</param> 
-				</targetClasses> <targetTests> <param>com.newt.test.*</param> </targetTests> 
-				</configuration> </plugin> -->
-			<!-- <plugin>
+			<plugin>
 				<groupId>org.pitest</groupId>
 				<artifactId>pitest-maven</artifactId>
-				<version>1.1.9</version>
+				<version>1.2.2</version>
 				<configuration>
+					<targetClasses>
+						<param>com.newt.service.*</param>
+					</targetClasses>
 					<targetTests>
-						exclude IntegrationTests and SystemTests
-						<param>*Test</param>
+						<param>com.newt.test.*</param>
 					</targetTests>
 				</configuration>
-			</plugin> -->
+			</plugin>
 		</plugins>
 	</build>
 </project>

@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.newt.bean.Item;
 
-public class SampleServiceImpl {
+public class SampleServiceImpl implements SampleService {
 
 	public void getItems() {
 
