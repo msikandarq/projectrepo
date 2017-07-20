@@ -7,11 +7,21 @@
 	<packaging>war</packaging>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+			<version>4.4</version> <scope>test</scope> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.4</version>
+			<version>4.6</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.pitest</groupId>
+			<artifactId>pitest-parent</artifactId>
+			<version>1.1.10</version>
+			<type>pom</type>
 		</dependency>
 	</dependencies>
 	<build>
@@ -42,6 +52,19 @@
 				<configuration>
 					<attachClasses>true</attachClasses>
 					<warSourceDirectory>WebContent</warSourceDirectory>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>1.1.10</version>
+				<configuration>
+					<targetClasses>
+						<param>com.newt.service.*</param>
+					</targetClasses>
+					<targetTests>
+						<param>com.newt.test.*</param>
+					</targetTests>
 				</configuration>
 			</plugin>
 		</plugins>
