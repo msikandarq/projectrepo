@@ -17,6 +17,10 @@
 			<td>${itemModel.getPrice()}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</tr>
 		<tr>
+			<td>Item Quantity
+			<td>${itemModel.getItemQty()}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</tr>
+		<tr>
 			<td>GST
 			<td>${itemModel.getGstPrice()}
 		</tr>
