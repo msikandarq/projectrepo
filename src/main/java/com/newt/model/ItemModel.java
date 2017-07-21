@@ -5,6 +5,7 @@ public class ItemModel {
 	private String itemName;
 	private double price;
 	private int itemQty;
+	//gst
 	private double gstPrice;
 	private double finalTotal;
 	/**

@@ -9,7 +9,7 @@
 <body bgcolor="pink">
 	<table border="1" align="center">
 		<tr>
-			<td>Item Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<td>Item Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<td>${itemModel.getItemName()}
 		</tr>
 		<tr>

@@ -21,7 +21,7 @@ public class ItemController {
 	@RequestMapping("/itemform")
 	public ModelAndView itemForm() {
 		// command is a reserved request attribute name, now use <form> tag to
-		// show object data
+		
 		return new ModelAndView("itemform", "command", new ItemModel());
 	}
 
