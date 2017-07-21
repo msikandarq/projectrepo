@@ -21,7 +21,7 @@
 			<td>${itemModel.getItemQty()}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</tr>
 		<tr>
-			<td>GST
+			<td>Service Tax
 			<td>${itemModel.getGstPrice()}
 		</tr>
 		<tr>
