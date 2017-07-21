@@ -36,7 +36,7 @@ public class ItemController {
 		item.setPrice(30000);
 		items.add(item);
 
-		double priceAfterGST = sampleService.calcualtePriceWithTax(items);
+		double priceAfterGST = sampleService.calculatePriceWithGST(items);
 		double gstPrice = priceAfterGST - itemModel.getItemQty() * item.getPrice();
 		
 		itemModel.setGstPrice(gstPrice);
