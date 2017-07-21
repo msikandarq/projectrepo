@@ -5,6 +5,20 @@ public class ItemModel {
 	private String itemName;
 	private double price;
 	private int itemQty;
+	private double gstPrice;
+	private double finalTotal;
+	/**
+	 * @return the finalTotal
+	 */
+	public double getFinalTotal() {
+		return finalTotal;
+	}
+	/**
+	 * @param finalTotal the finalTotal to set
+	 */
+	public void setFinalTotal(double finalTotal) {
+		this.finalTotal = finalTotal;
+	}
 	/**
 	 * @return the itemName
 	 */
@@ -40,5 +54,17 @@ public class ItemModel {
 	 */
 	public void setItemQty(int itemQty) {
 		this.itemQty = itemQty;
+	}
+	/**
+	 * @return the gstPrice
+	 */
+	public double getGstPrice() {
+		return gstPrice;
+	}
+	/**
+	 * @param gstPrice the gstPrice to set
+	 */
+	public void setGstPrice(double gstPrice) {
+		this.gstPrice = gstPrice;
 	}
 }

@@ -34,11 +34,15 @@ public class ItemController {
 		item.setName(itemModel.getItemName());
 		item.setItemQty(itemModel.getItemQty());
 		item.setPrice(30000);
+		items.add(item);
 
 		double priceAfterGST = sampleService.calculatePriceWithGST(items);
 		double gstPrice = priceAfterGST - itemModel.getItemQty() * item.getPrice();
 		
-		model.addAttribute("GSTPrice", gstPrice);
+		itemModel.setGstPrice(gstPrice);
+		itemModel.setPrice(item.getPrice());
+		itemModel.setFinalTotal(priceAfterGST);
+		model.addAttribute("itemModel", itemModel);
 		
 		// return new ModelAndView("empform","command",emp);//will display
 		// object data
